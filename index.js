@@ -24,9 +24,10 @@ function updateTime() {
   minutes.innerHTML = m;
   seconds.innerHTML = s;
   ampm.innerHTML = Ampm;
-  setTimeout(() => {
-    updateTime();
-  }, 1000);
+  //   setTimeout(() => {
+  //     updateTime();
+  //   }, 1000);
 }
 
 updateTime();
+setInterval(updateTime, 1000);
